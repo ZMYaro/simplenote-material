@@ -5,8 +5,6 @@
 	color: white !important;
 	border: 0 none !important;
 	box-shadow: rgba(0, 0, 0, 0.26) 0 2px 5px 0, rgba(0, 0, 0, 0.16) 0 2px 10px 0 !important;
-	//text-align: left !important;
-	//z-index: 1 !important;
 }
 
 /* Search box */
@@ -90,14 +88,17 @@
 	.toolbar .tbutton:hover,
 	.searchcancel:hover,
 	.header #user_account_menu:hover,
+	.left-side-menu .sn-rocker-option:hover,
 	.toolbar .tbutton:focus,
 	.searchcancel:focus,
-	.header #user_account_menu:focus {
+	.header #user_account_menu:focus,
+	.left-side-menu .sn-rocker-option:focus {
 		background-color: rgba(255,255,255,0.07) !important;
 	}
 	.toolbar .tbutton:active,
 	.searchcancel:active,
-	.header #user_account_menu:active {
+	.header #user_account_menu:active,
+	.left-side-menu .sn-rocker-option:active {
 		background-color: rgba(255,255,255,0.13) !important;
 	}
 .toolbar .left-tools .tbutton.add {
@@ -136,3 +137,48 @@
 	background-size: 24px 24px !important;
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzQ0OGFjOSIgZD0iTTE5LDRIMTUuNUwxNC41LDNIOS41TDguNSw0SDVWNkgxOU02LDE5QTIsMiAwIDAsMCA4LDIxSDE2QTIsMiAwIDAsMCAxOCwxOVY3SDZWMTlaIiAvPjwvc3ZnPg==) !important;
 }
+
+/* History slider */
+.ui-slider-horizontal {
+	height: 2px !important;
+	background: #e0e0e0 !important;
+	background: #999 !important; /* To match the unchangeable border on the slider */
+	border: 0 none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	margin-top: 16px !important;
+}
+#versions .ui-slider-handle {
+	background: #448ac9 !important;
+	border-radius: 50% !important;
+	width: 12px !important;
+	height: 12px !important;
+	margin-top: -6px !important;
+}
+	#versions .ui-slider-handle:active {
+		box-shadow: 0 0 0 10px rgba(128, 128, 128, 0.2),
+		            0 0 0 10px rgba(128, 128, 128, 0.2) !important;
+		border-radius: 50% !important;
+		width: 16px !important;
+		height: 16px !important;
+		margin-top: -8px !important;
+	}
+
+/* Markdown mode toggle */
+.left-side-menu {
+	left: 360px !important;
+}
+.left-side-menu .sn-rocker-option {
+	border: 0 none !important;
+	border-radius: 0 !important;
+	text-shadow: none !important;
+	background: none !important;
+	color: white !important;
+	
+	border-bottom: 3px solid transparent !important;
+	padding: 10px 8px !important;
+	text-transform: uppercase !important;
+}
+	.left-side-menu .sn-rocker-option.active {
+		border-bottom-color: white !important;
+	}
